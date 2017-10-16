@@ -1,0 +1,23 @@
+{
+  "name": "simple_ocean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "simple_ocean.js",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZaBAOW/Simple_Ocean.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZaBAOW/Simple_Ocean/issues"
+  },
+  "homepage": "https://github.com/ZaBAOW/Simple_Ocean#readme"
+}
