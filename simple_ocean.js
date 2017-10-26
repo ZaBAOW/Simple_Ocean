@@ -20,18 +20,18 @@ client.on('message', message => {
 	if(message.content === "stop?"){
 		counter = 3;
 		message.channel.send("Ok I'll stop it :frowning2:", {tts: true});
+	} else if(message.content === ">start"){
+		counter = 0;
+		message.channel.send("HERE WE GO!!! :ocean: :ocean: :ocean:", {tts:true});
 	} else if(message.content === ocean_msg_1 || message.content === ocean_msg_2){
 		return;
-	}else if(counter === 0){
+	} else if(counter === 0){
   		message.channel.send(ocean_msg_1, {tts: true});
   		message.channel.send(ocean_msg_2, {tts: true});
   		// message.channel.send("?play ocean man");
   		counter++;
-	} else if(counter > 0 && counter < 3 && message.content != ocean_msg_1 || ocean_msg_2){
+	} else if(counter === 1){
 		counter--;
-	}  else if(message.content === ">start"){
-		counter = 0;
-		message.channel.send("HERE WE GO!!! :ocean: :ocean: :ocean:", {tts:true});
 	}
 });
 
